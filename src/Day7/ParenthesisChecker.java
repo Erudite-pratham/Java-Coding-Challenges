@@ -5,7 +5,6 @@ import java.util.Stack;
 public class ParenthesisChecker {
     public static void main(String[] args) {
         String x = "([]";
-        boolean flag = false;
         Stack<Character> stack = new Stack<>();
 
         for (int i = 0; i < x.length(); i++) {
@@ -20,7 +19,6 @@ public class ParenthesisChecker {
             } else {
                 stack.push(x.charAt(i));
             }
-
         }
 
         System.out.println(stack.isEmpty());
